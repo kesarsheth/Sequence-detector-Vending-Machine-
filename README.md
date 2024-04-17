@@ -1,14 +1,15 @@
 # Vending-Machine-
 `timescale 1ns / 1ps
 module vending_machine(
-     //Inputs
+ //Inputs
     input clk,
     input rst,
     input [1:0]in, // 01 = 5 Rs, 10 = 10 Rs
     
-    //Outputs
+ //Outputs
     output reg out,
-    output reg[1:0] change);
+    output reg[1:0] change
+    );
     
 //Variables Declaration
 parameter s0 = 2'b00;
