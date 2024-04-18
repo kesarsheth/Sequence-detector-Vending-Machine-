@@ -32,7 +32,7 @@ Instead, it focuses on the internal mechanisms such as user interaction, coin va
 
 - The state diagram of mealy state machine mainly includes three states namely A, B, and C. These three states are tagged within the circles as well as every circle communicates with one state. Conversions among these three states are signified by directed lines. In the above diagram, the inputs and outputs are denoted with 0/0, 1/0, and 1/1. Based on the input value, there are two conversions from every state. Generally, the amount of required states in the mealy machine is below or equivalent to the number of required states in Moore state machine. There is an equal Moore state machine for every Mealy state machine. As a result, based on the necessity we can employ one of them.
 
-#### 2.1.2 Moore State Machine
+### 2.1.2 Moore State Machine
 - When the outputs depend on current states then the FSM can be named as Moore state machine. The Moore state machine’s block diagram is shown below. The Moore state machine block diagram consists of two parts namely combinational logic as well as memory. Fig
 
  ![moore state machine BG](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/daa64f43-6fbc-41c6-b1fe-70f6279b15d6)
