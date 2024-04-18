@@ -20,13 +20,13 @@ Instead, it focuses on the internal mechanisms such as user interaction, coin va
   ### 2.1.1 Mealy State Machine
   - When the outputs depend on the current inputs as well as states, then the FSM can be named to be a mealy state machine. The following diagram is the mealy state machine block diagram. The mealy state machine block diagram consists of two parts namely combinational logic as well as memory. The memory in the machine can be used to provide some of the previous outputs as combinational logic inputs.
   
-        ![Mealy state machine BG](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/b6f4f6e3-580b-4c5f-bd2e-97f056d9af19)
+  ![Mealy state machine BG](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/b6f4f6e3-580b-4c5f-bd2e-97f056d9af19)
 
         Fig 1. Mealy State Machine Block Diagram
 
 - Based on the current inputs as well as states, this machine can produce outputs. Thus, the outputs can be suitable only at positive otherwise negative of the CLK signal. The mealy state machine’s state diagram is shown below.
 
-        ![mealy state machine state diagram](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/4137379f-4265-4bce-bdd7-4fc345e67318)
+![mealy state machine state diagram](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/4137379f-4265-4bce-bdd7-4fc345e67318)
 
       Fig 2. State Diagram of Mealy State Machine
 
@@ -35,13 +35,13 @@ Instead, it focuses on the internal mechanisms such as user interaction, coin va
 #### 2.1.2 Moore State Machine
 - When the outputs depend on current states then the FSM can be named as Moore state machine. The Moore state machine’s block diagram is shown below. The Moore state machine block diagram consists of two parts namely combinational logic as well as memory. Fig
 
-         ![moore state machine BG](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/daa64f43-6fbc-41c6-b1fe-70f6279b15d6)
+ ![moore state machine BG](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/daa64f43-6fbc-41c6-b1fe-70f6279b15d6)
   
      Fig 3. Moore State Machine Block Diagram
 
 - In this case, the current inputs, as well as current states, will decide the next states. Thus, depending on further states, this machine will generate the outputs. So, the outputs of this will be applicable simply after the conversion of the state. The Moore state machine state diagram is shown below. In the above state, the diagram includes four states like a mealy state machine namely A, B, C, and D. the four states as well as individual outputs are placed in the circles.
 
-      ![moore state machine state diagram](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/1d89c331-15b1-4b4b-a996-cb6738ae07ae)
+![moore state machine state diagram](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/1d89c331-15b1-4b4b-a996-cb6738ae07ae)
 
         Fig 4. State Diagram of Moore State Machine
 
@@ -49,8 +49,8 @@ Instead, it focuses on the internal mechanisms such as user interaction, coin va
 
 ### 2.2 Finite State Machine Applications:-
 - The finite state machine applications mainly include the following.
-FSMs are used in games; they are most recognized for being utilized in artificial intelligence, and however, they are also frequent in executions of navigating parsing text, input handling of the customer, as well as network protocols.
-These are restricted in computational power; they have the good quality of being comparatively simple to recognize. So, they are frequently used by software developers as well as system designers for summarizing the performance of a difficult system.
+-FSMs are used in games; they are most recognized for being utilized in artificial intelligence, and however, they are also frequent in executions of navigating parsing text, input handling of the customer, as well as network protocols.
+-These are restricted in computational power; they have the good quality of being comparatively simple to recognize. So, they are frequently used by software developers as well as system designers for summarizing the performance of a difficult system.
 - The finite state machines are applicable in vending machines, video games, traffic lights, controllers in CPU, text parsing, analysis of protocol, recognition of speech, language processing, etc.
 
 ### 2.3 Advantages of Finite State Machine:-
@@ -69,7 +69,7 @@ The disadvantages of the finite state machine include the following
 
 ## 3. STATE DIAGRAM
 
-         ![state digarm V_Machine](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/7fa6222c-653d-451c-80bb-cd0d48f3a300)
+ ![state digarm V_Machine](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/7fa6222c-653d-451c-80bb-cd0d48f3a300)
 
 ## 4. STATES TRANSITIONS
 **S0 : 0 Rs in Vending Machine :–**
@@ -89,45 +89,45 @@ Move to State 0, OUTPUT = 1, CHANGE = Rs 0.
 **S2 : 10 Rs in Vending Machine :–**
 
 • If nothing added: Again, incomplete transaction thus vending machine returns the money added as CHANGE (10 Rs). No bottle given.
-Move to State 0, OUTPUT = 0, CHANGE = Rs 10 (10).
+Move to State 0, OUTPUT = 0, CHANGE = Rs 10 (10). 
 • If 5 Rs added: Signifies a complete transaction, a bottle is returned with no CHANGE.
-Move to State 0, OUTPUT = 1, CHANGE = Rs 0.
+Move to State 0, OUTPUT = 1, CHANGE = Rs 0. 
 •If 10 Rs added: Here the customer over paid, thus a bottle should be returned but with CHANGE (5 Rs).
 Move to State 0, OUTPUT = 1, CHANGE = Rs 5 (01)
 
 ## 5. SCHEMATIC DIAGRAM
 
-          ![schemetic diagram](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/93fdbb44-53cb-4c85-af97-797cb2b96b03)
+![schemetic diagram](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/93fdbb44-53cb-4c85-af97-797cb2b96b03)
 
 
 ## 6. RESULTS
 
      Fig 1. ADDING 5 RS THREE TIMES CONSECUTIVELY
 
-     ![adding 3Time's 5RS](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/e0aac825-4c69-4030-943e-bd0cb25514e0)
+  ![adding 3Time's 5RS](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/e0aac825-4c69-4030-943e-bd0cb25514e0)
 
 
      Fig 2. ADDING 5 RS AND THEN 10 RS
 
-     ![Adding 5RS   10RS](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/b3933a27-14e1-4973-b15c-334a2b2eb580)
+ ![Adding 5RS   10RS](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/b3933a27-14e1-4973-b15c-334a2b2eb580)
 
 
      Fig 3. ADDING 10 RS TWO TIMES
 
-     ![adding 10 RS TWO times](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/5ae199ca-62cc-4613-b688-c89e6aa20d65)
+ ![adding 10 RS TWO times](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/5ae199ca-62cc-4613-b688-c89e6aa20d65)
 
 
     Fig 4. ADDING 5 RS AND THEN NOTHING
 
-    ![Adding 5RS   then nothing](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/c35aaea0-2483-42be-86af-df800c64de02)
+ ![Adding 5RS   then nothing](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/c35aaea0-2483-42be-86af-df800c64de02)
 
 
      FIG 5. ADDING 10 RS AND THEN NOTHING
 
-     ![adding 10RS   nothing](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/6b291485-7229-44a3-8785-b4f8ae0b9ad8)
+  ![adding 10RS   nothing](https://github.com/kesarsheth/Sequence-detector-Vending-Machine-/assets/131940649/6b291485-7229-44a3-8785-b4f8ae0b9ad8)
 
 
 ## 7. CONCLUSION
--- We successfully implemented a software simulation of a vending machine. This endeavor allowed us to understand the intricacies of digital system emulation and provided hands-on experience in creating a functioning simulation.
+- We successfully implemented a software simulation of a vending machine. This endeavor allowed us to understand the intricacies of digital system emulation and provided hands-on experience in creating a functioning simulation.
 Properly controlling the transitions between states within our virtual vending machine was critical to accurately emulate real-world vending machine behavior.
--- Through this project, we've not only learned about Verilog but also gained insights into the complexities of designing and simulating real-world systems. It underscores the importance of thorough testing, verification, and the potential for future advancements in vending machine technology. Our understanding of digital design practices has grown significantly.
+- Through this project, we've not only learned about Verilog but also gained insights into the complexities of designing and simulating real-world systems. It underscores the importance of thorough testing, verification, and the potential for future advancements in vending machine technology. Our understanding of digital design practices has grown significantly.
